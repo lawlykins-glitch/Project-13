@@ -1,0 +1,14 @@
+Project13 Overview (Plain English)
+----------------------------------
+- This is a small sales manager built with Python and Tkinter (GUI) plus a command-line option.
+- Data is stored in a local SQLite database file named `sales_db.sqlite` (already included).
+- The GUI (`gui.py`) has two tabs:
+  1) Lookup & Update: Enter a date (YYYY-MM-DD) and region code to load a sale, view its amount, and save changes.
+  2) Analytics & Export: Filter by start/end date and region, see totals/averages and region/quarter breakdowns, and export the filtered data to CSV.
+- The command-line program (`ui.py`) lets you view, add, and import sales via text prompts.
+- Core logic lives in:
+  - `db.py`: Reads/writes the SQLite database.
+  - `business.py`: Defines data structures like Region and DailySales.
+  - `sales.py`: Helper functions for CLI input.
+- Run the GUI: `python3 gui.py` (from inside the Project13 folder).
+- Run the CLI: `python3 ui.py` (from inside the Project13 folder).
